@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="461.0" prefWidth="731.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+    <children>
+        <ImageView fx:id="backgroundCond" fitHeight="641.0" fitWidth="2668.0" layoutX="-8.0" onMouseClicked="#choiceButton" AnchorPane.bottomAnchor="-180.0" AnchorPane.leftAnchor="-8.0" AnchorPane.rightAnchor="-1929.0" AnchorPane.topAnchor="0.0">
+            <image>
+                <Image url="@blue-sky-with-shiny-clouds-background_1017-23279.png" />
+            </image>
+        </ImageView>
+        <AnchorPane layoutX="10.0" layoutY="14.0" prefHeight="448.0" prefWidth="715.0" style="-fx-background-color: Transparent; -fx-background-radius: 15; -fx-border-color: #004b9a; -fx-border-radius: 12; -fx-border-width: 4;" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="11.0" AnchorPane.rightAnchor="11.0" AnchorPane.topAnchor="11.0">
+            <children>
+                <ImageView fx:id="currWeathSymbol" fitHeight="168.0" fitWidth="198.0" layoutX="53.0" layoutY="73.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="214.0" AnchorPane.leftAnchor="53.0" AnchorPane.rightAnchor="504.0" AnchorPane.topAnchor="73.0" />
+                <Text fx:id="currDescr" fill="WHITE" layoutX="42.0" layoutY="258.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="181.60890197753906" AnchorPane.bottomAnchor="177.666015625" AnchorPane.leftAnchor="42.0" AnchorPane.rightAnchor="485.39109802246094" AnchorPane.topAnchor="242.591796875">
+                    <font>
+                        <Font name="Arial Black" size="14.0" />
+                    </font>
+                </Text>
+                <Text fx:id="currWeath" fill="WHITE" layoutX="261.0" layoutY="207.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" AnchorPane.bottomAnchor="210.927734375" AnchorPane.leftAnchor="261.0" AnchorPane.rightAnchor="314.955078125" AnchorPane.topAnchor="125.525390625">
+                    <font>
+                        <Font name="Arial" size="90.0" />
+                    </font>
+                </Text>
+                <Pane layoutX="548.0" layoutY="122.0" prefHeight="150.0" prefWidth="140.0" AnchorPane.bottomAnchor="173.0" AnchorPane.leftAnchor="544.0" AnchorPane.rightAnchor="27.0" AnchorPane.topAnchor="118.0">
+                    <children>
+                        <Text fx:id="windcurr" fill="WHITE" layoutX="14.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="98.408935546875">
+                            <font>
+                                <Font name="Arial Rounded MT Bold" size="13.0" />
+                            </font>
+                        </Text>
+                        <Text fx:id="humidityCurr" fill="WHITE" layoutX="14.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="108.8089599609375">
+                            <font>
+                                <Font name="Arial Rounded MT Bold" size="13.0" />
+                            </font>
+                        </Text>
+                        <Text fx:id="pressCurr" fill="WHITE" layoutX="14.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="108.8089599609375">
+                            <font>
+                                <Font name="Arial Rounded MT Bold" size="13.0" />
+                            </font>
+                        </Text>
+                        <Text fx:id="uvCURR" fill="WHITE" layoutX="14.0" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="108.8089599609375">
+                            <font>
+                                <Font name="Arial Rounded MT Bold" size="13.0" />
+                            </font>
+                        </Text>
+                  <Text fx:id="cloudCov" fill="WHITE" layoutX="14.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="108.8089599609375">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="13.0" />
+                     </font>
+                  </Text>
+                    </children>
+                </Pane>
+                <Text fx:id="feelsLike" fill="WHITE" layoutX="285.0" layoutY="244.3017578125" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="136.0089111328125" AnchorPane.bottomAnchor="197.0" AnchorPane.leftAnchor="281.0" AnchorPane.rightAnchor="292.0" AnchorPane.topAnchor="228.0">
+                    <font>
+                        <Font name="Arial Rounded MT Bold" size="13.0" />
+                    </font>
+                </Text>
+                <Text fx:id="currLoc" fill="WHITE" layoutX="92.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nicosia, Cyprus" textAlignment="CENTER" wrappingWidth="468.5812683105469" AnchorPane.bottomAnchor="371.85546875" AnchorPane.leftAnchor="92.0" AnchorPane.rightAnchor="146.41873168945312" AnchorPane.topAnchor="14.37890625">
+                    <font>
+                        <Font name="Arial Black" size="36.0" />
+                    </font>
+                </Text>
+                <Text fx:id="currDate" fill="WHITE" layoutX="272.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="108.8089599609375" AnchorPane.bottomAnchor="352.2578125" AnchorPane.leftAnchor="272.0" AnchorPane.rightAnchor="326.1910400390625" AnchorPane.topAnchor="69.6982421875">
+                    <font>
+                        <Font name="Arial Rounded MT Bold" size="13.0" />
+                    </font>
+                </Text>
+                <ImageView fx:id="forcastImag1" fitHeight="82.0" fitWidth="86.0" layoutX="81.0" layoutY="314.0" pickOnBounds="true" preserveRatio="true" />
+                <ImageView fx:id="forcastImag2" fitHeight="82.0" fitWidth="86.0" layoutX="245.0" layoutY="314.0" pickOnBounds="true" preserveRatio="true" />
+                <ImageView fx:id="forcastImag3" fitHeight="82.0" fitWidth="86.0" layoutX="364.0" layoutY="314.0" pickOnBounds="true" preserveRatio="true" />
+                <Text fx:id="forcW1" fill="WHITE" layoutX="74.0" layoutY="421.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="81.99999999999994">
+                    <font>
+                        <Font name="Arial" size="20.0" />
+                    </font>
+                </Text>
+                <Text fx:id="forcW2" fill="WHITE" layoutX="224.0" layoutY="419.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="81.99999999999994">
+                    <font>
+                        <Font name="Arial" size="20.0" />
+                    </font>
+                </Text>
+                <Text fx:id="forcW3" fill="WHITE" layoutX="372.0" layoutY="420.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="81.99999999999994">
+                    <font>
+                        <Font name="Arial" size="20.0" />
+                    </font>
+                </Text>
+            <Button fx:id="buttData" layoutX="284.0" layoutY="98.0" mnemonicParsing="false" onMouseClicked="#choiceButton" prefHeight="38.0" prefWidth="65.0" style="-fx-background-radius: 30;" stylesheets="@application.css" text="Get Data" textFill="#2561a0" AnchorPane.bottomAnchor="313.0" AnchorPane.leftAnchor="284.0" AnchorPane.rightAnchor="334.0" AnchorPane.topAnchor="98.0" />
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>
