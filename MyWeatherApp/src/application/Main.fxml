@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
@@ -10,54 +9,49 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="461.0" prefWidth="731.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
     <children>
-        <ImageView fx:id="backgroundCond" fitHeight="641.0" fitWidth="2668.0" layoutX="-8.0" onMouseClicked="#choiceButton" AnchorPane.bottomAnchor="-180.0" AnchorPane.leftAnchor="-8.0" AnchorPane.rightAnchor="-1929.0" AnchorPane.topAnchor="0.0">
-            <image>
-                <Image url="@blue-sky-with-shiny-clouds-background_1017-23279.png" />
-            </image>
-        </ImageView>
-        <AnchorPane layoutX="10.0" layoutY="14.0" prefHeight="448.0" prefWidth="715.0" style="-fx-background-color: Transparent; -fx-background-radius: 15; -fx-border-color: #004b9a; -fx-border-radius: 12; -fx-border-width: 4;" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="11.0" AnchorPane.rightAnchor="11.0" AnchorPane.topAnchor="11.0">
+        <AnchorPane layoutX="10.0" layoutY="14.0" prefHeight="448.0" prefWidth="715.0" style="-fx-background-color: Black; -fx-background-radius: 15; -fx-border-color: Black; -fx-border-radius: 12; -fx-border-width: 4;" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="11.0" AnchorPane.rightAnchor="11.0" AnchorPane.topAnchor="11.0">
             <children>
-                <ImageView fx:id="currWeathSymbol" fitHeight="168.0" fitWidth="198.0" layoutX="53.0" layoutY="73.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="214.0" AnchorPane.leftAnchor="53.0" AnchorPane.rightAnchor="504.0" AnchorPane.topAnchor="73.0" />
+                <ImageView fx:id="currWeathSymbol" fitHeight="168.0" fitWidth="198.0" layoutX="38.0" layoutY="81.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="191.0" AnchorPane.leftAnchor="38.0" AnchorPane.rightAnchor="473.0" AnchorPane.topAnchor="81.0" />
                 <Text fx:id="currDescr" fill="WHITE" layoutX="42.0" layoutY="258.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="181.60890197753906" AnchorPane.bottomAnchor="177.666015625" AnchorPane.leftAnchor="42.0" AnchorPane.rightAnchor="485.39109802246094" AnchorPane.topAnchor="242.591796875">
                     <font>
                         <Font name="Arial Black" size="14.0" />
                     </font>
                 </Text>
-                <Text fx:id="currWeath" fill="WHITE" layoutX="261.0" layoutY="207.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" AnchorPane.bottomAnchor="210.927734375" AnchorPane.leftAnchor="261.0" AnchorPane.rightAnchor="314.955078125" AnchorPane.topAnchor="125.525390625">
+                <Text fx:id="currWeath" fill="WHITE" layoutX="219.0" layoutY="231.474609375" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="264.8089141845704" AnchorPane.bottomAnchor="194.0" AnchorPane.leftAnchor="215.0" AnchorPane.rightAnchor="229.0" AnchorPane.topAnchor="146.0">
                     <font>
                         <Font name="Arial" size="90.0" />
                     </font>
                 </Text>
-                <Pane layoutX="548.0" layoutY="122.0" prefHeight="150.0" prefWidth="140.0" AnchorPane.bottomAnchor="173.0" AnchorPane.leftAnchor="544.0" AnchorPane.rightAnchor="27.0" AnchorPane.topAnchor="118.0">
+                <Pane layoutX="556.0" layoutY="130.0" prefHeight="147.0" prefWidth="146.0" AnchorPane.bottomAnchor="167.0" AnchorPane.leftAnchor="552.0" AnchorPane.rightAnchor="11.0" AnchorPane.topAnchor="126.0">
                     <children>
-                        <Text fx:id="windcurr" fill="WHITE" layoutX="14.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="98.408935546875">
+                        <Text fx:id="windcurr" fill="WHITE" layoutX="14.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="118.408935546875">
                             <font>
                                 <Font name="Arial Rounded MT Bold" size="13.0" />
                             </font>
                         </Text>
-                        <Text fx:id="humidityCurr" fill="WHITE" layoutX="14.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="108.8089599609375">
+                        <Text fx:id="humidityCurr" fill="WHITE" layoutX="14.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="118.408935546875">
                             <font>
                                 <Font name="Arial Rounded MT Bold" size="13.0" />
                             </font>
                         </Text>
-                        <Text fx:id="pressCurr" fill="WHITE" layoutX="14.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="108.8089599609375">
+                        <Text fx:id="pressCurr" fill="WHITE" layoutX="14.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="118.408935546875">
                             <font>
                                 <Font name="Arial Rounded MT Bold" size="13.0" />
                             </font>
                         </Text>
-                        <Text fx:id="uvCURR" fill="WHITE" layoutX="14.0" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="108.8089599609375">
+                        <Text fx:id="uvCURR" fill="WHITE" layoutX="14.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="118.408935546875">
                             <font>
                                 <Font name="Arial Rounded MT Bold" size="13.0" />
                             </font>
                         </Text>
-                  <Text fx:id="cloudCov" fill="WHITE" layoutX="14.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="108.8089599609375">
+                  <Text fx:id="cloudCov" fill="WHITE" layoutX="14.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="118.408935546875">
                      <font>
                         <Font name="Arial Rounded MT Bold" size="13.0" />
                      </font>
                   </Text>
                     </children>
                 </Pane>
-                <Text fx:id="feelsLike" fill="WHITE" layoutX="285.0" layoutY="244.3017578125" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="136.0089111328125" AnchorPane.bottomAnchor="197.0" AnchorPane.leftAnchor="281.0" AnchorPane.rightAnchor="292.0" AnchorPane.topAnchor="228.0">
+                <Text fx:id="feelsLike" fill="WHITE" layoutX="286.0" layoutY="261.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="136.0089111328125" AnchorPane.bottomAnchor="176.0" AnchorPane.leftAnchor="286.0" AnchorPane.rightAnchor="286.9910888671875" AnchorPane.topAnchor="248.0">
                     <font>
                         <Font name="Arial Rounded MT Bold" size="13.0" />
                     </font>
@@ -90,7 +84,10 @@
                         <Font name="Arial" size="20.0" />
                     </font>
                 </Text>
-            <Button fx:id="buttData" layoutX="284.0" layoutY="98.0" mnemonicParsing="false" onMouseClicked="#choiceButton" prefHeight="38.0" prefWidth="65.0" style="-fx-background-radius: 30;" stylesheets="@application.css" text="Get Data" textFill="#2561a0" AnchorPane.bottomAnchor="313.0" AnchorPane.leftAnchor="284.0" AnchorPane.rightAnchor="334.0" AnchorPane.topAnchor="98.0" />
+            <Button fx:id="buttData" layoutX="294.0" layoutY="108.0" mnemonicParsing="false" onMouseClicked="#choiceButton" prefHeight="33.0" prefWidth="82.0" style="-fx-background-radius: 50;" stylesheets="@application.css" text="Get Data" AnchorPane.bottomAnchor="303.0" AnchorPane.leftAnchor="290.0" AnchorPane.rightAnchor="337.0" AnchorPane.topAnchor="104.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Button>
             </children>
         </AnchorPane>
     </children>

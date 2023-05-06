@@ -3,10 +3,8 @@ package application;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.net.HttpURLConnection;
-import java.net.URL;
 import java.util.ArrayList;
-
+import java.net.*;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -19,6 +17,7 @@ import javafx.scene.input.MouseEvent;
 import javafx.scene.text.Text;
 import java.io.*;
 import javax.net.ssl.HttpsURLConnection;
+
 public class MainController {
 
     public MainController() {
@@ -83,15 +82,17 @@ public class MainController {
     private ImageView backgroundCond;
 
     @FXML
-    void choiceButton(MouseEvent event) throws JSONException {
+    void choiceButton(MouseEvent event) throws JSONException, IOException {
+    	
     	try {
 			APIConnection();
 		} catch (IOException e) {
 			
 			e.printStackTrace();
 		}
-    	setAPIValues();
     	
+    	setAPIValues();
+    
     	double tempNow = this.current.getDouble("temp_c");
         int HumidityNow = this.current.getInt("humidity");
         double feelslke = this.current.getDouble("feelslike_c");
@@ -101,6 +102,7 @@ public class MainController {
         int is_day = this.current.getInt("is_day");
         int cloudCovNow = this.current.getInt("cloud");
         String weCondNow = this.condition.getString("text");
+        String iconURL ="http:" + this.condition.getString("icon");
         String currDateTime = this.locationapi.getString("localtime");
        
         humidityCurr.setText("Humidity: "+ HumidityNow);
@@ -112,22 +114,21 @@ public class MainController {
         feelsLike.setText("Feels like: "+ feelslke+"°c");
         currDate.setText(currDateTime);
         currDescr.setText(weCondNow);
-        
-        
-        
-        File file1 = new File("src/application/png4.png");
-        File file2 = new File("src/application/png12.png");
-        File file3 = new File("src/application/Nightgif2.gif");
-        
+       
+		URL url = new URL(iconURL);
+		URLConnection conn = url.openConnection();
+		InputStream stream = conn.getInputStream();
+		Image icon = new Image(stream);
+		
         if(is_day == 1 )
         {
-        	currWeathSymbol.setImage(new Image(file1.toURI().toString()));
+        	currWeathSymbol.setImage(icon);
         	
         }
         else if(is_day == 0)
         {
-        	currWeathSymbol.setImage(new Image(file2.toURI().toString()));
-        	backgroundCond.setImage(new Image(file3.toURI().toString()));
+        	currWeathSymbol.setImage(icon);
+        	
         }
     }
    
