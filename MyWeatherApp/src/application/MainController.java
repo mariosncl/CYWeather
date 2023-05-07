@@ -67,16 +67,10 @@ public class MainController {
     private Text humidityCurr;
 
     @FXML
-    private Text pressCurr;
-
-    @FXML
     private Text uvCURR;
 
     @FXML
     private Text windcurr;
-    
-    @FXML
-    private Text cloudCov;
     
     @FXML
     private ImageView backgroundCond;
@@ -105,12 +99,10 @@ public class MainController {
         String iconURL ="http:" + this.condition.getString("icon");
         String currDateTime = this.locationapi.getString("localtime");
        
-        humidityCurr.setText("Humidity: "+ HumidityNow);
+        humidityCurr.setText(HumidityNow + "%");
         currWeath.setText(tempNow+ "°c");
-        windcurr.setText("Wind: " +windNow + " kph");
-        pressCurr.setText("Pressure: " +pressureNow + " mb");
-        uvCURR.setText("UV: " + uvNow);
-        cloudCov.setText("Cloud Coverage: " + cloudCovNow + "%");
+        windcurr.setText(windNow + " km/h");
+        uvCURR.setText(uvNow+"");
         feelsLike.setText("Feels like: "+ feelslke+"°c");
         currDate.setText(currDateTime);
         currDescr.setText(weCondNow);
